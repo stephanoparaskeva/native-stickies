@@ -1,27 +1,30 @@
 {
-  "_from": "react-native-stiky-scrollview",
-  "_id": "react-native-stiky-scrollview@1.0.5",
+  "_args": [
+    [
+      "github:stephanoparaskeva/sticky-scrollview",
+      "/Users/Stephano/Development/code/head/euclid"
+    ]
+  ],
+  "_from": "github:stephanoparaskeva/sticky-scrollview",
+  "_id": "react-native-stiky-scrollview@github:stephanoparaskeva/sticky-scrollview#fcd6308c581614e538e585b91fc343c43123fd41",
   "_inBundle": false,
-  "_integrity": "sha512-4HdnDkVK4qlaMeNW4v9tIEbgVdL8QMaunSo5EDhEYTO3AA+KUXS1/JfbRUf/ju0585u1hFWy1LAvb4x0WoKLhw==",
+  "_integrity": "",
   "_location": "/react-native-stiky-scrollview",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "react-native-stiky-scrollview",
-    "name": "react-native-stiky-scrollview",
-    "escapedName": "react-native-stiky-scrollview",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+    "type": "git",
+    "raw": "github:stephanoparaskeva/sticky-scrollview",
+    "rawSpec": "github:stephanoparaskeva/sticky-scrollview",
+    "saveSpec": "github:stephanoparaskeva/sticky-scrollview",
+    "fetchSpec": null,
+    "gitCommittish": null
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-stiky-scrollview/-/react-native-stiky-scrollview-1.0.5.tgz",
+  "_resolved": "github:stephanoparaskeva/sticky-scrollview#fcd6308c581614e538e585b91fc343c43123fd41",
   "_shasum": "e55f04dfdf6e5f0c35e7d235e5730a26a524ecec",
-  "_spec": "react-native-stiky-scrollview",
+  "_spec": "github:stephanoparaskeva/sticky-scrollview",
   "_where": "/Users/Stephano/Development/code/head/euclid",
   "author": {
     "name": "moseszhou",
@@ -30,7 +33,6 @@
   "bugs": {
     "url": "https://github.com/moseszhou/StickyScrollView/issues"
   },
-  "bundleDependencies": false,
   "deprecated": false,
   "description": "react-native可吸顶的ScrollView",
   "homepage": "https://github.com/moseszhou/StickyScrollView#readme",
