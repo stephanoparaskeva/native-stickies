@@ -1,21 +1,16 @@
-# StickyScrollView
-react-native可吸顶的ScrollView
+可吸顶的
 
 # 效果
-![react-native-stiky-scrollview](./screen.gif)
-
-# install
 
 ```javascript
 npm install react-native-stiky-scrollview
 ```
 
-#Demo
 ```javascript
 /**
- * StickyScrollView 这是ScrollView 
+ * StickyScrollView 这是
  * StickyContainer 通过这个元素包裹有需要吸顶的组件，组件内部可能还有非吸顶部分
- * StickyContent 包裹需要吸顶的部分，被包含于StickyContainer
+ * StickyContent 包裹需要吸顶的部分，被包含于
  * 注意：RN0.59以下版本为了兼容android吸顶效果 StickyContent需要为StickyContainer的直接子元素
  * <StickyContainer><StickyContent></StickyContent></StickyContainer>
  * 或者
