@@ -26,12 +26,8 @@
   "_shasum": "e55f04dfdf6e5f0c35e7d235e5730a26a524ecec",
   "_spec": "github:stephanoparaskeva/sticky-scrollview",
   "_where": "/Users/Stephano/Development/code/head/euclid",
-  "author": {
-    "name": "moseszhou",
-    "email": "moses.zhou@icloud.com"
-  },
+  "author": {},
   "bugs": {
-    "url": "https://github.com/moseszhou/StickyScrollView/issues"
   },
   "deprecated": false,
   "description": "react-native可吸顶的ScrollView",
@@ -53,16 +49,9 @@
   "main": "index.js",
   "name": "react-native-stiky-scrollview",
   "peerDependencies": {
-    "react": "^16.3.1",
-    "react-native": "^0.55.4",
-    "babel-jest": "24.9.0",
-    "babel-preset-react-native": "4.0.1",
-    "jest": "24.9.0",
-    "react-test-renderer": "16.3.1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moseszhou/StickyScrollView.git"
+    "type": "git"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
