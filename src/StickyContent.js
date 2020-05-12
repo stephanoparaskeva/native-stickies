@@ -74,7 +74,6 @@ export default class StickyContent extends React.Component {
     }
 
     _onLayout(event) {
-        console.log(event.nativeEvent)
         if (!this.ready) {
             this.measureLayout();
         } else if (this.stickyManager) {

@@ -13,7 +13,6 @@ export default class StickyScrollView extends Component {
 
 
     render() {
-        console.log('render ScrollView')
         const { children } = this.props;
         return (
             <Context.Provider value={{
