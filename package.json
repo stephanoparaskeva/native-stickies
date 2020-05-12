@@ -1,0 +1,66 @@
+{
+  "_from": "react-native-stiky-scrollview",
+  "_id": "react-native-stiky-scrollview@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-4HdnDkVK4qlaMeNW4v9tIEbgVdL8QMaunSo5EDhEYTO3AA+KUXS1/JfbRUf/ju0585u1hFWy1LAvb4x0WoKLhw==",
+  "_location": "/react-native-stiky-scrollview",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-stiky-scrollview",
+    "name": "react-native-stiky-scrollview",
+    "escapedName": "react-native-stiky-scrollview",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-stiky-scrollview/-/react-native-stiky-scrollview-1.0.5.tgz",
+  "_shasum": "e55f04dfdf6e5f0c35e7d235e5730a26a524ecec",
+  "_spec": "react-native-stiky-scrollview",
+  "_where": "/Users/Stephano/Development/code/head/euclid",
+  "author": {
+    "name": "moseszhou",
+    "email": "moses.zhou@icloud.com"
+  },
+  "bugs": {
+    "url": "https://github.com/moseszhou/StickyScrollView/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "react-native可吸顶的ScrollView",
+  "homepage": "https://github.com/moseszhou/StickyScrollView#readme",
+  "jest": {
+    "preset": "react-native"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react",
+    "ios",
+    "android",
+    "sticky",
+    "ScrollView",
+    "StickyScrollView"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-stiky-scrollview",
+  "peerDependencies": {
+    "react": "^16.3.1",
+    "react-native": "^0.55.4",
+    "babel-jest": "24.9.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "24.9.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moseszhou/StickyScrollView.git"
+  },
+  "version": "1.0.5"
+}
