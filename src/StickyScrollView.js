@@ -24,7 +24,7 @@ export default class StickyScrollView extends Component {
             }}
             >
                 <Animated.ScrollView
-                    style={{ flex: 1 }}
+                    style={this.props.style || { flex: 1 }}
                     ref={e => {
                         this._me = e;
                         if (!this.loaded) {
