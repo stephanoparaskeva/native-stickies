@@ -33,15 +33,8 @@ export default class StickyScrollView extends Component {
             }
           }}
           onScroll={Animated.event(
-            [
-              {
-                nativeEvent: { contentOffset: { y: this.scrollY } },
-              },
-            ],
-            {
-              useNativeDriver: true,
-              listener: this.props.onScroll,
-            }
+            [{ nativeEvent: { contentOffset: { y: this.scrollY } } }],
+            { useNativeDriver: true, listener: this.props.onScroll }
           )}
           scrollEventThrottle={16}
         >

@@ -11,6 +11,7 @@ export default class StickyContainer extends Component {
     this.key = `StickyContainer-${Math.random()}`;
     this.height = 0;
     this._onLayout = this._onLayout.bind(this);
+    this.externalStickyManager = new StickyManager();
   }
 
   render() {
@@ -24,7 +25,9 @@ export default class StickyContainer extends Component {
             <Context.Provider
               value={{
                 stickyScrollY,
-                stickyManager: external ? new StickyManager() : stickyManager,
+                stickyManager: external
+                  ? this.externalStickyManager
+                  : stickyManager,
                 scrollView,
                 stickyContainerKey: this.key,
               }}

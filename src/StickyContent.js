@@ -67,7 +67,6 @@ export default class StickyContent extends React.Component {
               ],
             });
             styleContent = { transform: [{ translateY }] };
-            // 背景色层
             const colorAnimate = this.stickyScrollY.interpolate({
               inputRange: [y, y + 0.1, 99999],
               outputRange: [-height, 0, 0],
@@ -135,14 +134,6 @@ export default class StickyContent extends React.Component {
     }, 100);
   }
 
-  /**
-   *
-   *
-   * @param {*} y 本组件相对于ScrollView的Y
-   * @param {*} height 本组件高度
-   * @param {*} areaBottom 本组件吸顶管辖区域的下底边相对于ScrollView的Y
-   * @memberof StickyContent
-   */
   update(y, height, areaBottom) {
     this.ready = true;
     this.mounted &&
@@ -155,16 +146,12 @@ export default class StickyContent extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    zIndex: 9999999,
-    overflow: "hidden",
-  },
+  container: { zIndex: 9999999 },
   cover: {
     zIndex: -1,
     position: "absolute",
     height: "100%",
     width: "100%",
-    overflow: "hidden",
     flex: 1,
   },
 });
