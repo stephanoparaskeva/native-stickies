@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
+import { StickyManager } from "./StickyManager";
 import { Zindex, Context } from "./Context";
 
 export default class StickyContainer extends Component {
