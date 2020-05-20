@@ -19,7 +19,7 @@ export default class StickyContainer extends Component {
     return (
       <Context.Consumer>
         {(context) => {
-          const { stickyScrollY, stickyManager, scrollView } = context;
+          const { stickyScrollY, stickyManager, flatList } = context;
           this.stickyManager = stickyManager;
           return (
             <Context.Provider
@@ -28,7 +28,7 @@ export default class StickyContainer extends Component {
                 stickyManager: external
                   ? this.externalStickyManager
                   : stickyManager,
-                scrollView,
+                flatList,
                 stickyContainerKey: this.key,
               }}
             >

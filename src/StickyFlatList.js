@@ -22,7 +22,8 @@ export default class StickyFlatList extends Component {
           zIndex: 999999,
         }}
       >
-        <Animated.ScrollView
+        <Animated.FlatList
+          ListHeaderComponent={() => this.loaded && children}
           {...this.props}
           style={this.props.style || { flex: 1 }}
           ref={(e) => {
@@ -37,9 +38,7 @@ export default class StickyFlatList extends Component {
             { useNativeDriver: true, listener: this.props.onScroll }
           )}
           scrollEventThrottle={16}
-        >
-          {this.loaded && children}
-        </Animated.ScrollView>
+        />
       </Context.Provider>
     );
   }

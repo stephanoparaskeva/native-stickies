@@ -35,12 +35,12 @@ export default class StickyContent extends React.Component {
           const {
             stickyScrollY,
             stickyManager,
-            scrollView,
+            flatList,
             stickyContainerKey,
           } = context;
           this.stickyScrollY = stickyScrollY;
           this.stickyManager = stickyManager;
-          this.scrollView = scrollView;
+          this.flatList = flatList;
           this.stickyContainerKey = stickyContainerKey;
           let styleContent = {},
             styleColor = {};
@@ -112,10 +112,10 @@ export default class StickyContent extends React.Component {
     this.getMeasureTimer = window.setTimeout(() => {
       this.mounted &&
         this._me &&
-        this.scrollView &&
+        this.flatList &&
         UIManager.measureLayout(
           findNodeHandle(this._me),
-          findNodeHandle(this.scrollView),
+          findNodeHandle(this.flatList),
           () => {},
           (x, y, w, h) => {
             if (this.mounted && this.stickyManager) {
@@ -123,7 +123,7 @@ export default class StickyContent extends React.Component {
               if (this.stickyContainerKey === key) {
                 window.setTimeout(() => {
                   this.mounted &&
-                    this.scrollView
+                    this.flatList
                       .getNode()
                       .scrollTo({ x: 0, y, animated: true });
                 }, 50);
