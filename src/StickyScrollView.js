@@ -3,7 +3,7 @@ import { Animated } from "react-native";
 import { StickyManager } from "./StickyManager";
 import { Context } from "./Context";
 
-export default class StickyFlatList extends Component {
+export default class StickyScrollView extends Component {
   constructor(props) {
     super(props);
     this.scrollY = new Animated.Value(0);
