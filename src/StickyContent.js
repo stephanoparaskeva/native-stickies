@@ -67,11 +67,6 @@ export default class StickyContent extends React.Component {
               ],
             });
             styleContent = { transform: [{ translateY }] };
-            const colorAnimate = this.stickyScrollY.interpolate({
-              inputRange: [y, y + 0.1, 99999],
-              outputRange: [-height, 0, 0],
-            });
-            styleColor = { transform: [{ translateY: colorAnimate }] };
           }
           return (
             <Animated.View
@@ -79,15 +74,6 @@ export default class StickyContent extends React.Component {
               ref={(e) => (this._me = e)}
               style={[styles.container, styleContent]}
             >
-              {holdBgColor !== undefined && (
-                <Animated.View
-                  style={[
-                    styles.cover,
-                    styleColor,
-                    { backgroundColor: holdBgColor },
-                  ]}
-                />
-              )}
               {children}
             </Animated.View>
           );
@@ -147,11 +133,4 @@ export default class StickyContent extends React.Component {
 
 const styles = StyleSheet.create({
   container: { zIndex: 9999999 },
-  cover: {
-    zIndex: -1,
-    position: "absolute",
-    height: "100%",
-    width: "100%",
-    flex: 1,
-  },
 });

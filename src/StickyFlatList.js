@@ -23,7 +23,7 @@ export default class StickyFlatList extends Component {
         }}
       >
         <Animated.FlatList
-          ListHeaderComponent={() => this.loaded && children}
+          ListHeaderComponent={children}
           {...this.props}
           style={this.props.style || { flex: 1 }}
           ref={(e) => {
